@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Insta Help</title>
+
+    <script src="../static/js/jquery-3.2.0.js"></script>
+    <script src="../static/js/Onload.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-clean.css">
+    <script>
+        function validate(id) {
+
+                document.getElementById(id).style.display= 'inline';
+            }
+
+
+    </script>
+
+</head>
+<body >
+
+<div class="container gallery-container">
+
+    <h1><font size="30em"><center>Insta Help</center></font></h1>
+    <h2><font size="5em" color="#D3D3D3"><i><center>Shopper's Mood Handler</center></i></h2>
+
+
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail" draggable="true" ondragstart="return dragStart(ev)">
+                    <a class="lightbox" href="../Images/Angry1.jpg">
+                        <img src="../Images/Angry1.jpg" alt="Park">
+                    </a>
+                    <div class="caption">
+                        <h3><font size="5em"> Frustrated User @Womens Section</font></h3>
+                        <p>Confidence : 98%</p>
+                        <button onclick="validate('Attender1')">Serve</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <label id="Attender1" hidden="True"><b>Attended by John Rold</b></label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/disgust.jpg">
+                        <img src="../images/disgust.jpg" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <h3>Disgusted Women @Kids Aisle</h3>
+                        <p>Confidence : 85%</p>
+                        <button onclick="validate('Attender2')">Serve</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <label id="Attender2" hidden="True"><b>Attended by Kathy Trevor</b></label>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/Contempt.jpg">
+                        <img src="../images/Contempt.jpg" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <h3>Women with Contempt @ Clearence Sale Aisle</h3>
+                        <p>Confidence : 70%</p>
+                        <button onclick="validate('Attender3')">Serve</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <label id="Attender3" hidden="True"><b>Attended by Maria Hely</b></label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/Surprise1.jpg">
+                        <img src="../images/Surprise1.jpg" alt="Rails">
+                    </a>
+                    <div class="caption">
+                        <h3>Surprised Man@ Electronics Aisle </h3>
+                        <p>Confidence : 92%</p>
+                        <button onclick="validate('Attender4')">Serve</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <label id="Attender4" hidden="True"><b>Attended by Kristy Jaro</b></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/SadMan.jpg">
+                        <img src="../images/SadMan.jpg" alt="Traffic">
+                    </a>
+                    <div class="caption">
+                        <h3>Sad Man @ Grocery Aisle</h3>
+                        <p>Confidence : 85%</p>
+                        <button onclick="validate('Attender5')">Serve</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <label id="Attender5" hidden="True"><b>Attended by Debra Mikly</b></label>
+                    </div>
+                </div>
+            </div>
+             <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="../images/BoredMan2.jpg">
+                        <img src="../images/BoredMan2.jpg" alt="Tuneel">
+                    </a>
+                    <div class="caption">
+                        <h3>Bored Man @ Womens Dress Aisle</h3>
+                        <p>Confidence : 64%</p>
+                        <button onclick="validate('Attender6')">Serve</button>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <label id="Attender6" hidden="True"><b>Attended by David Gareg</b></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<p><center>&copy; Spartahack</center></p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
